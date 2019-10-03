@@ -5,7 +5,7 @@ Say Hello to the world in whatever language you like
 
 
 # What is Hacktoberfest?
-Hacktoberfest is a month-long celebration of open source software run by DigitalOcean and DEV.Hacktoberfest is open to everyone in our global community.To participate, four pull requests must be submitted to public GitHub repositories.You can sign up anytime between October 1 and October 31.
+Hacktoberfest is a month-long celebration of open source software run by DigitalOcean and DEV. Hacktoberfest is open to everyone in our global community. To qualify for the official limited edition Hacktoberfest shirt, you must register and make four pull requests (PRs) between October 1-31 (in any time zone). The first 50,000 participants who successfully complete the challenge will earn a T-shirt.
 
 Step 1:
 Register for [Hacktoberfest](https://hacktoberfest.digitalocean.com/)

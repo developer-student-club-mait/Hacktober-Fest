@@ -1,0 +1,691 @@
+@font-face {
+  font-family: DM-Sans;
+  src: url(../fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+.html,
+body {
+  font-family: DM-Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.crux-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+    url(../images/x6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.logo-container a {
+  text-decoration: none;
+  color: #fff;
+}
+.crux-container h1 {
+  color: #fff;
+  font-size: 4em;
+  width: 100%;
+  text-align: center;
+  margin-top: 125px;
+  font-weight: Bolder;
+  -webkit-animation: fadeInUpBig 0.6s;
+  animation: fadeInUpBig 0.6s;
+}
+.aboutus {
+  background-color: #f6f5f5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+}
+.aboutus h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 35px;
+}
+.aboutus p {
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  margin: 40px auto;
+}
+.homeFlipper {
+  z-index: 0;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.aboutUS {
+  background-color: #f6f5f5;
+  height: 600px;
+  width: 100%;
+}
+.whyUs {
+  background-color: #f6f5f5;
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)),
+    url(../images/bgo1.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.whyUs h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 35px;
+  color: #fff;
+}
+.whyUs p {
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  margin: 40px auto;
+  color: #fff;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  color: #fff;
+}
+.menu-container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.menu-container ul li {
+  margin: 0 25px;
+  padding: 20px 0;
+}
+.menu-container ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s ease;
+  white-space: nowrap;
+  font-weight: 800;
+  font-size: 18px;
+}
+.menu-container ul li a:hover {
+  color: #dd4145;
+  border-bottom: 2px solid #dd4145;
+}
+.container {
+  display: none;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 30px;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+  border-radius: 40px;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-11px, 4px);
+  transform: rotate(-45deg) translate(-11px, 4px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  width: 26px;
+  -webkit-transform: rotate(45deg) translate(-6px, 0);
+  transform: rotate(45deg) translate(-6px, 0);
+}
+.side-navbar {
+  z-index: 1;
+  width: 0;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  margin-left: 60%;
+  transition: 0.2s;
+  display: none;
+  opacity: 0;
+}
+.menu-items .container {
+  margin: 25px 5px;
+}
+.menu-items {
+  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-items button {
+  min-width: 130px;
+  margin: 10px 0;
+  width: 70%;
+}
+.offer-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(../images/bgo10.jpeg);
+}
+.services {
+  font-size: 20px;
+}
+.services h1 {
+  margin: 20px auto;
+}
+.outerdiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px auto;
+  width: 70%;
+}
+.innerdiv {
+  height: 200px;
+  width: 300px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 8px;
+  transition: 0.2s;
+}
+.innerdiv:hover {
+  box-shadow: 0 1px 1px 1px #a3a3a3;
+}
+.service-cost-1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  width: 70%;
+}
+.service-cost-2 {
+  width: 50%;
+}
+.cost {
+  height: 350px;
+  width: 400px;
+  background-image: url(../images/gradient.png);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+  font-size: 35px;
+  text-align: center;
+}
+.cost-special {
+  padding: 10px;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+}
+.cost-special h1 {
+  font-weight: 800;
+  margin: 10px auto;
+  font-size: 100px;
+}
+.cost:hover {
+  box-shadow: 5px 5px 10px 10px;
+}
+.price {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  margin: 35px auto;
+}
+.flip-card {
+  background-color: transparent;
+  width: 450px;
+  height: 450px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-back,
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  color: #fff;
+}
+.flip-card-front h1 {
+  margin-top: 8%;
+  font-weight: Bold;
+}
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(180deg);
+}
+.flip-card-back h1 {
+  font-weight: 700;
+}
+.flip-card-back p {
+  font-size: 18px;
+  width: 70%;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.flip-card-back button a {
+  text-decoration: none;
+  color: #fff;
+}
+.trialFlipFront {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)),
+    url(../images/trialFlip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.trialFlipBack {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/trialFlip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prodFlipFront {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/prodFlip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prodFlipBack {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/prodFlip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.offerFlipFront {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/offerFlip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.offerFlipBack {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/offerFlip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.foot {
+  width: 100%;
+  height: 250px;
+  background-color: #151616;
+  color: #fff;
+}
+.footUp {
+  margin: auto;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quickLinker h6 a {
+  text-decoration: none;
+  transition: 0.2s;
+  color: gray;
+}
+.quickLinker h6 a:hover {
+  color: #fff;
+}
+.socialHandler {
+  display: flex;
+  flex-direction: column;
+}
+.socialHandler a {
+  text-decoration: none;
+}
+.socialHandler i {
+  margin-left: 15px;
+  font-size: 25px;
+}
+.socialHandler span {
+  margin-top: 10px;
+  color: gray;
+  transition: 0.2s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.socialHandler span:hover {
+  color: #fff;
+}
+.footLow {
+  margin: auto;
+  width: 50%;
+  height: 50px;
+  border-top: 1px solid #3a3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.freetrial-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    url(../images/bgo2.jpeg);
+  background-position: 0 110%;
+}
+.freeTrial {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
+}
+.freeTrial .freeText {
+  text-align: center;
+  width: 50%;
+  margin: 50px 0;
+}
+.freeText h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.second-grey {
+  background-color: #f6f5f5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  margin-top: 60px;
+}
+.image img {
+  height: 500px;
+  width: 450px;
+}
+.trialForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+}
+.products-container {
+  background-image: url(../images/bgo5.jpeg);
+  background-position: 0 110%;
+}
+.product-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.products {
+  height: 1500px;
+}
+.cards {
+  margin: 40px;
+}
+.pricing-chart {
+  height: 500px;
+  background-color: #fff;
+}
+.polishFlipFront {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)),
+    url(../images/automobile-automotive-car-638479.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.polishFlipBack {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url(../images/automobile-automotive-car-638479.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.waxFlipFront {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)),
+    url(../images/asphalt-automotive-car-3015599.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.waxFlipBack {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url(../images/asphalt-automotive-car-3015599.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.microFlipFront {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)),
+    url(../images/automobile-blur-car-1468642.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.microFlipBack {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url(../images/automobile-blur-car-1468642.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.windowFlipFront {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)),
+    url(../images/blur-car-drive-451590.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.windowFlipBack {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url(../images/blur-car-drive-451590.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.flip-card-back {
+  color: #fff;
+}
+.contact-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/bgo1.jpeg);
+}
+.contact-form {
+  margin: 60px auto;
+  width: 60%;
+}
+@media only screen and (max-width: 1440px) {
+  .flip-card .flip-card-inner {
+    transform: scale(0.8);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .flip-card .flip-card-inner p {
+    font-size: 16px;
+  }
+  .cost {
+    width: 280px;
+  }
+  .outerdiv {
+    width: 90%;
+  }
+  .innerdiv {
+    width: 280px;
+  }
+  .service-cost-1 {
+    width: 90%;
+  }
+  .service-cost-2 {
+    width: 70%;
+  }
+  .product-cards-first {
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .products {
+    height: 2500px;
+  }
+  .cards {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .menu-container {
+    display: none;
+  }
+  .side-navbar {
+    display: block;
+  }
+  .head {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .crux-container h1 {
+    font-size: 3em;
+  }
+  .aboutus h1 {
+    font-size: 40px;
+  }
+  .aboutus p {
+    font-size: 20px;
+    width: 80%;
+  }
+  .homeFlipper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .products {
+    height: 1900px;
+    margin-bottom: 40px;
+  }
+  .freeTrial {
+    flex-direction: column;
+  }
+  .freeTrial .freeText {
+    text-align: center;
+    width: 90%;
+  }
+  .outerdiv {
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  .innerdiv {
+    margin: 15px auto;
+  }
+  .service-cost-1 {
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  .service-cost-2 {
+    width: 70%;
+  }
+  .cost {
+    margin: 15px auto;
+    height: 400px;
+    width: 300px;
+  }
+  .cost-special {
+    height: 600px;
+    width: 300px;
+    margin: 10px auto;
+    font-size: 22px;
+  }
+  .product-cards-first {
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .cards {
+    height: 250px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .freeTrial img {
+    width: 95%;
+    height: 80%;
+  }
+  .second-grey .freeTrial {
+    flex-direction: column-reverse;
+  }
+  .crux-container h1 {
+    margin-top: 20px;
+  }
+  .flip-card {
+    height: 350px;
+    width: 90%;
+  }
+  .whyUs h1 {
+    font-size: 25px;
+  }
+  .whyUs p {
+    font-size: 19px;
+  }
+  .outerdiv {
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  .innerdiv {
+    margin: 15px auto;
+  }
+  .cost {
+    margin: 15px auto;
+    height: 400px;
+    width: 300px;
+  }
+  .cost-special {
+    height: 600px;
+    width: 300px;
+    margin: 10px auto;
+    font-size: 20px;
+  }
+  .cost-special h1 {
+    font-size: 40px;
+  }
+  .footUp {
+    width: 80%;
+  }
+  .footLow {
+    width: 100%;
+    font-size: 12px;
+  }
+}

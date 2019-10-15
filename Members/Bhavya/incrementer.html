@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- code  -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!-- browser -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!-- JSX=> JS -->
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <title>counter</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <script type="text/babel">
+            class Counter extends React.Component{
+                constructor(props){
+                    super(props)//React.Component--refers to this
+                    //initial state
+                    this.state={
+                        count:0,
+                        num:1,
+                        // sum:0
+                    }
+                }
+
+                render(){
+                    return  (<div>
+                                <h1>counter value:{this.state.count}</h1>
+                                <p>
+                                    {this.state.count}
+                                </p>
+                                <button onClick={this.increment}>Increment</button>
+                                <button onClick={this.decrement}>Decrement</button>
+                                
+
+                            </div>);
+                }
+                increment=()=>{
+                    this.setState({
+                        count:this.state.count+1,
+                        num:this.state.num+1
+                    })
+                }
+            
+                decrement=()=>{
+                    // alert("decremented to " +(this.state.count))
+                    
+                    this.setState({
+                        count:this.state.count-1,
+                        num:this.state.num-1
+                    })
+                    // await alert("decremented to " +(this.state.count))
+                }
+            }
+            class App extends React.Component{
+                render(){
+
+                    return <div>   
+                            <Counter/> 
+                            <Counter/> 
+                                            </div>
+                }
+            }
+            //to actually render on Dom
+            ReactDOM.render(<App/>,document.querySelector("#app"));
+        </script>
+
+    </div>
+</body>
+
+</html>
